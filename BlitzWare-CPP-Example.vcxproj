@@ -170,6 +170,9 @@
     <ClInclude Include="BlitzWareAuth.h" />
     <ClInclude Include="skStr.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="BlitzWare-CPP-Library.lib" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

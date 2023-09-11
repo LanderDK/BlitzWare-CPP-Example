@@ -33,4 +33,9 @@
       <Filter>Header Files\Protection</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="BlitzWare-CPP-Library.lib">
+      <Filter>Header Files\Auth</Filter>
+    </Library>
+  </ItemGroup>
 </Project>
