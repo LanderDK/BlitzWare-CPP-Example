@@ -9,9 +9,9 @@
 using namespace BlitzWare;
 
 std::string apiUrl = skCrypt("https://api.blitzware.xyz/api/").decrypt();
-std::string appName = skCrypt("TestAPI").decrypt();
-std::string appSecret = skCrypt("e2b8129d620ad01f9b31aec1b5483d36e7aaf289d4e264d6ba12a9d9ec955ed3").decrypt();
-std::string appVersion = skCrypt("1.0").decrypt();
+std::string appName = skCrypt("NAME").decrypt();
+std::string appSecret = skCrypt("SECRET").decrypt();
+std::string appVersion = skCrypt("VERSION").decrypt();
 
 API BlitzWareAuth(apiUrl, appName, appSecret, appVersion);
 
