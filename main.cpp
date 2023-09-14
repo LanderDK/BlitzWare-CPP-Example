@@ -8,7 +8,7 @@
 
 using namespace BlitzWare;
 
-std::string apiUrl = skCrypt("https://api.blitzware.xyz/api/").decrypt();
+std::string apiUrl = skCrypt("https://api.blitzware.xyz/api").decrypt();
 std::string appName = skCrypt("NAME").decrypt();
 std::string appSecret = skCrypt("SECRET").decrypt();
 std::string appVersion = skCrypt("VERSION").decrypt();
@@ -97,6 +97,8 @@ int main()
 	std::cout << skCrypt("\nHardware-Id: ") << BlitzWareAuth.userData.hwid;
 	std::cout << skCrypt("\nLast login: ") << BlitzWareAuth.userData.lastLogin;
 	std::cout << skCrypt("\nSubscription expiry: ") << BlitzWareAuth.userData.expiry;
+
+	//BlitzWareAuth.DownloadFile("2ff23a2e-80f1-486a-a117-4c0f55fb1edd");
 
 	std::cout << skCrypt("\n\nClosing in five seconds...");
 	Sleep(5000);
