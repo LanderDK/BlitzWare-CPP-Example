@@ -41,7 +41,7 @@ int main()
 		std::cout << skCrypt("\nEnter 2FA (if enabled): ");
 		std::cin >> twoFactorCode;
 		if (BlitzWareAuth.Login(username, password, twoFactorCode)) {
-			BlitzWareAuth.Log(username, "User logged in");
+			BlitzWareAuth.Log("User logged in");
 			break;
 		}
 		else
@@ -56,7 +56,7 @@ int main()
 		std::cout << skCrypt("\nEnter license: ");
 		std::cin >> key;
 		if (BlitzWareAuth.Register(username, password, email, key)) {
-			BlitzWareAuth.Log(username, "User registered");
+			BlitzWareAuth.Log("User registered");
 			break;
 		}
 		else
@@ -69,7 +69,7 @@ int main()
 		std::cout << skCrypt("\nEnter license: ");
 		std::cin >> key;
 		if (BlitzWareAuth.Extend(username, password, key)) {
-			BlitzWareAuth.Log(username, "User extended");
+			BlitzWareAuth.Log("User extended");
 			break;
 		}
 		else
@@ -78,7 +78,7 @@ int main()
 		std::cout << skCrypt("\nEnter license: ");
 		std::cin >> key;
 		if (BlitzWareAuth.LoginLicenseOnly(key)) {
-			BlitzWareAuth.Log(key, "User login with license");
+			BlitzWareAuth.Log("User login with license");
 			break;
 		}
 		else
